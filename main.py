@@ -44,8 +44,12 @@ def check_all_answers(message):
            , ['sesion', 'cerrar', 'salirme', 'puedo', 'como'], required_word=['cerrar sesion','salirme'])
     answer('Para editar tu perfil da clic en tu mini perfil en la parte de arriba y seguido se abrira un menu en el que la opcion de editar perfil sera la primera',
            ['perfil', 'mi', 'editar', 'edito', 'como', 'cambio'], required_word=['perfil'])
-    answer('Para ver tus favoritos da clic en tu mini perfil en la parte de arriba y seguido se abrira un menu en el que la opcion de mis favoritos sera la segunda',
-           ['favorito', 'mi', 'favoritos', 'mis', 'veo', 'como'], required_word=['favorito','favoritos'])
+    answer('Para ver tus favoritos da clic en tu mini perfil en la parte de arriba a la derecha  y seguido se abrira un menu en el que la opcion de mis favoritos sera la segunda',
+           ['favorito', 'mi', 'favoritos', 'mis', 'veo', 'como'], required_word=['favoritos'])
+    answer('Para ver los programas disponibles dirigete a la pagina de inicio puedes dar clic en Programas CUCEI arriba a la izquierda', ['inicio', 'programas', 'becas', 'internados', 'trabajos'], required_word=['programas'])
+    answer('Para ver las becas laborales disponibles en la pagina de inicio da clic en ver programas en el apartado de Becas', ['como', 'becas', 'laborales', 'becas laborales', 'ver'], required_word=['becas'])
+    answer('Para ver los Internados disponibles en la pagina de inicio da clic en ver programas en el apartado de Interships', ['como', 'internado', 'intership', 'interships', 'ver'], required_word=['internados'])
+    answer('Para ver los Trabajos disponibles en la pagina de inicio da clic en ver programas en el apartado de Trabajos', ['como', 'tabajo', 'trabajos', 'oferta laboral', 'ver','empleo'], required_word=['trabajos'])
 
 
 
