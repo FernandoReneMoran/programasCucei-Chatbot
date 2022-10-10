@@ -41,7 +41,7 @@ def check_all_answers(message):
     answer('Hasta pronto y buena suerte', ['adios', 'hasta', 'luego', 'nos vemos'], single_answer=True)
     answer('Hola soy el asistente virtual si tienes algun problema estoy para servirte', ['start'], single_answer=True)
     answer('Para cerrar sesion da clic en tu mini perfil en la parte de arriba y seguido se abrira un menu en el que la opcion de cerrar sesion sera la ultima'
-           , ['sesion', 'cerrar', 'salirme', 'puedo', 'como'], required_word=['cerrar sesion','salirme'])
+           , ['sesion', 'cerrar', 'salirme', 'puedo', 'como'], required_word=['cerrar sesion'])
     answer('Para editar tu perfil da clic en tu mini perfil en la parte de arriba y seguido se abrira un menu en el que la opcion de editar perfil sera la primera',
            ['perfil', 'mi', 'editar', 'edito', 'como', 'cambio'], required_word=['perfil'])
     answer('Para ver tus favoritos da clic en tu mini perfil en la parte de arriba a la derecha  y seguido se abrira un menu en el que la opcion de mis favoritos sera la segunda',
