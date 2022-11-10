@@ -43,16 +43,28 @@ def check_all_answers(message):
     answer('Para cerrar sesion da clic en tu mini perfil en la parte de arriba a la derecha y seguido se abrira un menu en el que la opcion de cerrar sesion sera la ultima'
            , ['sesion', 'cerrar', 'salirme','terminar'], single_answer=True)
     answer('Para editar tu perfil da clic en tu mini perfil en la parte de arriba a la derecha y seguido se abrira un menu en el que la opcion de editar perfil sera la primera y seguido da clic en editar datos en la parte inferior de la pagina de perfil',
-           ['perfil', 'mi', 'editar', 'edito', 'como', 'cambio'], required_word=['editar'])
+           ['perfil', 'mi', 'editar', 'como', 'cambio'], required_word=['editar'])
+    answer('Para editar tu perfil da clic en tu mini perfil en la parte de arriba a la derecha y seguido se abrira un menu en el que la opcion de editar perfil sera la primera y seguido da clic en editar datos en la parte inferior de la pagina de perfil',
+           ['perfil', 'mi', 'edito', 'como', 'cambio'], required_word=['edito'])
     answer('Para ver tus favoritos da clic en tu mini perfil en la parte de arriba a la derecha y seguido se abrira un menu en el que la opcion de mis favoritos sera la segunda',
-           ['favorito', 'mi', 'favoritos', 'mis', 'veo', 'como'], required_word=['favoritos'])
+           ['mi', 'favoritos', 'mis', 'veo', 'como'], required_word=['favoritos'])
+    answer('Para ver tu favorito da clic en tu mini perfil en la parte de arriba a la derecha y seguido se abrira un menu en el que la opcion de mis favoritos sera la segunda',
+           ['mi', 'favorito', 'mis', 'veo', 'como'], required_word=['favorito'])
     answer('Para ver tus favoritos da clic en tu mini perfil en la parte de arriba a la derecha y seguido se abrira un menu en el que la opcion de mis favoritos es la segunda',
            ['publicaciones', 'mi', 'favoritas', 'mis', 'veo', 'como'], required_word=['favoritas'])
+    answer('Para ver tu favorita da clic en tu mini perfil en la parte de arriba a la derecha y seguido se abrira un menu en el que la opcion de mis favoritos es la segunda',
+           ['publicaciones', 'mi', 'favorita', 'mis', 'veo', 'como'], required_word=['favorita'])
     answer('Para ver los programas disponibles dirigete a la pagina de inicio puedes dar clic en Programas CUCEI arriba a la izquierda', ['inicio', 'programas', 'becas', 'internados', 'trabajos'], required_word=['programas'])
+    answer('Para ver algun programa disponible dirigete a la pagina de inicio puedes dar clic en Programas CUCEI arriba a la izquierda', ['inicio', 'programa', 'becas', 'internados', 'trabajos'], required_word=['programa'])
     answer('Para ver las becas laborales disponibles en la pagina de inicio da clic en ver programas en el apartado de Becas', ['como', 'becas', 'laborales', 'becas laborales', 'ver'], required_word=['becas'])
-    answer('Para ver los Internados disponibles en la pagina de inicio da clic en ver programas en el apartado de Interships', ['como', 'internado', 'veo   ', 'interships', 'ver'], required_word=['internados'])
-    answer('Para ver los Trabajos disponibles en la pagina de inicio da clic en ver programas en el apartado de Trabajos', ['como', 'tabajo', 'trabajos', 'oferta laboral', 'ver','veo'], required_word=['trabajos'])
-    answer('Para ver los detalles de una publicacion da clic en ver detalles y se mostraran los detalles de la publicacion', ['como', 'ver', 'detalle', 'detalles', 'publicacion','oferta'], required_word=['detalles'])
+    answer('Para ver alguna beca laboral disponible en la pagina de inicio da clic en ver programas en el apartado de Becas', ['como','laborales', 'becas laborales', 'ver','beca'], required_word=['beca'])
+    answer('Para ver los internados disponibles en la pagina de inicio da clic en ver programas en el apartado de Interships', ['como', 'veo', 'puedo', 'ver', 'internados'], required_word=['internados'])
+    answer('Para ver algun internado disponible en la pagina de inicio da clic en ver programas en el apartado de Interships', ['como', 'veo ', 'ver', 'puedo', 'internado'], required_word=['internado'])
+    answer('Para ver las interships disponibles en la pagina de inicio da clic en ver programas en el apartado de Interships', ['como', 'veo ', 'ver', 'puedo', 'interships'], required_word=['interships'])
+    answer('Para ver los trabajos disponibles en la pagina de inicio da clic en ver programas en el apartado de Trabajos', ['como','trabajos', 'oferta laboral', 'ver','veo'], required_word=['trabajos'])
+    answer('Para ver algun trabajo disponible en la pagina de inicio da clic en ver programas en el apartado de Trabajos', ['como', 'trabajo', 'oferta laboral', 'ver','veo'], required_word=['trabajo'])
+    answer('Para ver los detalles de una publicacion da clic en ver detalles y se mostraran los detalles de la publicacion', ['como', 'ver', 'detalles', 'publicacion','oferta'], required_word=['detalles'])
+    answer('Para ver el detalle de una publicacion da clic en ver detalles y se mostraran los detalles de la publicacion', ['como', 'ver', 'detalle', 'publicacion','oferta'], required_word=['detalle'])
     answer('En caso de que mi asistencia no sea suficiente y necesites hablar con algun docente da clic en tu mini perfil arriba a la derecha y da clic en ayuda ahi podras ver los contactos de los docentes', ['como', 'contacto', 'atencion', 'ayuda','necesito'], required_word=['ayuda'])
     answer('Para buscar alguna publicacion tienes que escribir el nombre del programa', ['como','puedo', 'publicacion','buscar'], required_word=['buscar'])
     answer('Para buscar alguna publicacion solo tienes que escribir el nombre del programa', ['como', 'busco', 'programa', 'publicacion'], required_word=['busco'])
@@ -81,7 +93,7 @@ def unknown():
 
 
 
-PORT = ""
+PORT = 80
 
 print("server listening")
 
